@@ -18,19 +18,39 @@
  	<!-- CSS
    ================================================== -->
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">  
-<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">  
-<link rel="stylesheet" href="{{ url_for('static', filename='css/vendor.css') }}">  
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">  
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">  
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/vendor.css') }}">  
 
-   <!-- script
-   ================================================== -->   
-<script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
-<script src="{{ url_for('static', filename='js/pace.min.js') }}"></script>
+	   <!-- script
+	   ================================================== -->   
+	<script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/pace.min.js') }}"></script>
 
 
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/jpg" href="{{ url_for('static', filename='favicon.jpg') }}">
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116629272-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116629272-1');
+	</script>
+
+	<!-- HeatMap -->
+	<script>
+	(function(h,e,a,t,m,p) {
+	m=e.createElement(a);m.async=!0;m.src=t;
+	p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+	})(window,document,'script','https://u.heatmap.it/log.js');
+	</script>
+
 
 </head>
 
